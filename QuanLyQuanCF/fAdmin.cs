@@ -40,10 +40,10 @@ namespace QuanLyQuanCF
             dtgvAccount.DataSource = accountList;
 
             LoadDateTimePickerBill();
-            //LoadListBillByDate(dtpkFromDate.Value, dtpkToDate.Value);
+            LoadListBillByDate(dtpkFromDate.Value, dtpkToDate.Value);
             LoadListFood();
             LoadAccount();
-            //LoadCategoryIntoCombobox(cbFoodCategory);
+            LoadCategoryIntoCombobox(cbFoodCategory);
             AddFoodBinding();
             AddAccountBinding();
         }
@@ -52,7 +52,6 @@ namespace QuanLyQuanCF
         {
             txtUserName.DataBindings.Add(new Binding("Text", dtgvAccount.DataSource, "UserName", true, DataSourceUpdateMode.Never));
             txtDisplayName.DataBindings.Add(new Binding("Text", dtgvAccount.DataSource, "DisplayName", true, DataSourceUpdateMode.Never));
-            nmFoodPrice.DataBindings.Add(new Binding("Value", dtgvAccount.DataSource, "Type", true, DataSourceUpdateMode.Never));
         }
 
         void LoadAccount()
@@ -62,12 +61,12 @@ namespace QuanLyQuanCF
         void LoadDateTimePickerBill()
         {
             DateTime today = DateTime.Now;
-            //dtpkFromDate.Value = new DateTime(today.Year, today.Month, 1);
-            //dtpkToDate.Value = dtpkFromDate.Value.AddMonths(1).AddDays(-1);
+            dtpkFromDate.Value = new DateTime(today.Year, today.Month, 1);
+            dtpkToDate.Value = dtpkFromDate.Value.AddMonths(1).AddDays(-1);
         }
         void LoadListBillByDate(DateTime checkIn, DateTime checkOut)
         {
-            //dtgvBill.DataSource = BillBUS.Instance.GetBillListByDate(checkIn, checkOut);
+            dtgvBill.DataSource = BillBUS.Instance.GetBillListByDate(checkIn, checkOut);
         }
 
         void AddFoodBinding()
@@ -202,11 +201,11 @@ namespace QuanLyQuanCF
 
                     Category cateogory = CategoryBUS.Instance.GetCategoryByID(id);
 
-                    cbxFoodCategory.SelectedItem = cateogory;
+                    cbFoodCategory.SelectedItem = cateogory;
 
                     int index = -1;
                     int i = 0;
-                    foreach (Category item in cbxFoodCategory.Items)
+                    foreach (Category item in cbFoodCategory.Items)
                     {
                         if (item.ID == cateogory.ID)
                         {
@@ -216,7 +215,7 @@ namespace QuanLyQuanCF
                         i++;
                     }
 
-                    cbxFoodCategory.SelectedIndex = index;
+                    cbFoodCategory.SelectedIndex = index;
                 }
             }
             catch { }
@@ -225,7 +224,7 @@ namespace QuanLyQuanCF
         private void btnAddFood_Click(object sender, EventArgs e)
         {
             string name = txtFoodName.Text;
-            int categoryID = (cbxFoodCategory.SelectedItem as Category).ID;
+            int categoryID = (cbFoodCategory.SelectedItem as Category).ID;
             float price = (float)nmFoodPrice.Value;
 
             if (FoodBUS.Instance.InsertFood(name, categoryID, price))
@@ -243,22 +242,7 @@ namespace QuanLyQuanCF
 
         private void btnEditFood_Click(object sender, EventArgs e)
         {
-            string name = txtFoodName.Text;
-            int categoryID = (cbxFoodCategory.SelectedItem as Category).ID;
-            float price = (float)nmFoodPrice.Value;
-            int id = Convert.ToInt32(txtFoodID.Text);
 
-            if (FoodBUS.Instance.UpdateFood(id, name, categoryID, price))
-            {
-                MessageBox.Show("Sửa món thành công");
-                LoadListFood();
-                if (updateFood != null)
-                    updateFood(this, new EventArgs());
-            }
-            else
-            {
-                MessageBox.Show("Có lỗi khi sửa thức ăn");
-            }
         }
 
         private void btnDeleteFood_Click(object sender, EventArgs e)
@@ -284,7 +268,7 @@ namespace QuanLyQuanCF
 
         private void btnViewBill_Click(object sender, EventArgs e)
         {
-            //LoadListBillByDate(dtpkFromDate.Value, dtpkToDate.Value);
+            LoadListBillByDate(dtpkFromDate.Value, dtpkToDate.Value);
         }
 
         private event EventHandler insertFood;
@@ -310,52 +294,53 @@ namespace QuanLyQuanCF
 
         #endregion              
 
-        //private void btnFristBillPage_Click(object sender, EventArgs e)
-        //{
-        //    txtPageBill.Text = "1";
-        //}
-
-        //private void btnLastBillPage_Click(object sender, EventArgs e)
-        //{
-        //    int sumRecord = BillBUS.Instance.GetNumBillListByDate(dtpkFromDate.Value, dtpkToDate.Value);
-
-        //    int lastPage = sumRecord / 10;
-
-        //    if (sumRecord % 10 != 0)
-        //        lastPage++;
-
-        //    txtPageBill.Text = lastPage.ToString();
-        //}
-
-        //private void txtPageBill_TextChanged(object sender, EventArgs e)
-        //{
-        //    dtgvBill.DataSource = BillBUS.Instance.GetBillListByDateAndPage(dtpkFromDate.Value, dtpkToDate.Value, Convert.ToInt32(txtPageBill.Text));
-        //}
-
-        //private void btnPrevioursBillPage_Click(object sender, EventArgs e)
-        //{
-        //    int page = Convert.ToInt32(txtPageBill.Text);
-
-        //    if (page > 1)
-        //        page--;
-
-        //    txtPageBill.Text = page.ToString();
-        //}
-
-        //private void btnNextBillPage_Click(object sender, EventArgs e)
-        //{
-        //    int page = Convert.ToInt32(txtPageBill.Text);
-        //    int sumRecord = BillBUS.Instance.GetNumBillListByDate(dtpkFromDate.Value, dtpkToDate.Value);
-
-        //    if (page < sumRecord)
-        //        page++;
-
-        //    txtPageBill.Text = page.ToString();
-        //}
-
-        private void fAdmin_Load(object sender, EventArgs e)
+        private void btnFristBillPage_Click(object sender, EventArgs e)
         {
-            // TODO: This line of code loads data into the 'QuanLyQuanCafeDataSet2.USP_GetListBillByDateForReport' table. You can move, or remove it, as needed.
+            txtPageBill.Text = "1";
         }
+
+        private void btnLastBillPage_Click(object sender, EventArgs e)
+        {
+            int sumRecord = BillBUS.Instance.GetNumBillListByDate(dtpkFromDate.Value, dtpkToDate.Value);
+
+            int lastPage = sumRecord / 10;
+
+            if (sumRecord % 10 != 0)
+                lastPage++;
+
+            txtPageBill.Text = lastPage.ToString();
+        }
+
+        private void txtPageBill_TextChanged(object sender, EventArgs e)
+        {
+            dtgvBill.DataSource = BillBUS.Instance.GetBillListByDateAndPage(dtpkFromDate.Value, dtpkToDate.Value, Convert.ToInt32(txtPageBill.Text));
+        }
+
+        private void btnPrevioursBillPage_Click(object sender, EventArgs e)
+        {
+            int page = Convert.ToInt32(txtPageBill.Text);
+
+            if (page > 1)
+                page--;
+
+            txtPageBill.Text = page.ToString();
+        }
+
+        private void btnNextBillPage_Click(object sender, EventArgs e)
+        {
+            int page = Convert.ToInt32(txtPageBill.Text);
+            int sumRecord = BillBUS.Instance.GetNumBillListByDate(dtpkFromDate.Value, dtpkToDate.Value);
+
+            if (page < sumRecord)
+                page++;
+
+            txtPageBill.Text = page.ToString();
+        }
+
+        //private void fAdmin_Load(object sender, EventArgs e)
+        //{
+        //TODO: This line of code loads data into the 'QuanLyQuanCafeDataSet2.USP_GetListBillByDateForReport' table.You can move, or remove it, as needed.
+        //}
+
     }
 }

@@ -38,12 +38,12 @@ namespace QuanLyQuanCF
             string passWord = txtPassWord.Text;
             if(AccountBUS.Instance.Login(userName, passWord))
             {
-                fTableManager f = new fTableManager();
+                Account loginAccount = AccountBUS.Instance.GetAccountByUserName(userName);
+                fTableManager f = new fTableManager(loginAccount);
                 this.Hide();
                 f.ShowDialog();
                 this.Show();
             }       
         }
-
     }
 }

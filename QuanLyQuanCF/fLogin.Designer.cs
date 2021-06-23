@@ -204,7 +204,7 @@ namespace QuanLyQuanCF
             // pictureBox1
             // 
             this.pictureBox1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.pictureBox1.Image = global::QuanLyQuanCF.Properties.Resources.man_key_near_computer_account_260nw_1499141258;
+            //this.pictureBox1.Image = global::QuanLyQuanCF.Properties.Resources.man_key_near_computer_account_260nw_1499141258;
             this.pictureBox1.Location = new System.Drawing.Point(0, 0);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(316, 275);

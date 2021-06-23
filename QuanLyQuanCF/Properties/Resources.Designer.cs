@@ -8,7 +8,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace QuanLyQuanCF.Properties {
+namespace QuanLyQuanCafe.Properties {
     using System;
     
     

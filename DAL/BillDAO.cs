@@ -43,6 +43,8 @@ namespace QuanLyQuanCafe.DAO
         {
             string query = "UPDATE dbo.Bill SET dateCheckOut = GETDATE(), status = 1, " + "discount = " + discount + ", totalPrice = " + totalPrice + " WHERE id = " + id;
             DataProvider.Instance.ExecuteNonQuery(query);
+            query = $"UPDATE dbo.TableFood SET status = N'Trống' WHERE id = (SELECT idTable FROM dbo.Bill WHERE id = {id})";
+            DataProvider.Instance.ExecuteNonQuery(query);
         }
         public void InsertBill(int id)
         {
