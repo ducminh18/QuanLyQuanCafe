@@ -113,5 +113,15 @@
   <ItemGroup>
     <None Include="Resources\man-key-near-computer-account-260nw-1499141258.jpg" />
   </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\BUS\BUS.csproj">
+      <Project>{693d5d62-942f-4e18-9fc3-8cae5cf1df46}</Project>
+      <Name>BUS</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\DTO\DTO.csproj">
+      <Project>{81cb944c-7f7d-413b-97ca-74c1ac6b01c0}</Project>
+      <Name>DTO</Name>
+    </ProjectReference>
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

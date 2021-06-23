@@ -7,6 +7,8 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using QuanLyQuanCafe.BUS;
+using QuanLyQuanCafe.DTO;
 
 namespace QuanLyQuanCF
 {
@@ -32,9 +34,9 @@ namespace QuanLyQuanCF
 
         private void btnxLogin_Click(object sender, EventArgs e)
         {
-            string userName = txtxUserName.Text;
-            string passWord = txtxPassWord.Text;
-            if(Login(userName, passWord))
+            string userName = txtUserName.Text;
+            string passWord = txtPassWord.Text;
+            if(AccountBUS.Instance.Login(userName, passWord))
             {
                 fTableManager f = new fTableManager();
                 this.Hide();
@@ -42,9 +44,6 @@ namespace QuanLyQuanCF
                 this.Show();
             }       
         }
-        bool Login(string userName, string passWord)
-        {
-            return DAL_Account.Instance.Login(userName, passWord);
-        }
+
     }
 }

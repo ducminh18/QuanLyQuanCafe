@@ -41,9 +41,21 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="DAL_Account.cs" />
+    <Compile Include="AccountDAO.cs" />
+    <Compile Include="BillDAO.cs" />
+    <Compile Include="BillInfoDAO.cs" />
+    <Compile Include="CategoryDAO.cs" />
     <Compile Include="DataProvider.cs" />
+    <Compile Include="FoodDAO.cs" />
+    <Compile Include="MenuDAO.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="TableDAO.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\DTO\DTO.csproj">
+      <Project>{81cb944c-7f7d-413b-97ca-74c1ac6b01c0}</Project>
+      <Name>DTO</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

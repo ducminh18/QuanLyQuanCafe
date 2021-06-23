@@ -46,16 +46,16 @@ namespace QuanLyQuanCF
             this.btnResetPassWord = new DevComponents.DotNetBar.ButtonX();
             this.cbAccountType = new DevComponents.DotNetBar.Controls.ComboBoxEx();
             this.labelX9 = new DevComponents.DotNetBar.LabelX();
-            this.txtxDisplayName = new DevComponents.DotNetBar.Controls.TextBoxX();
+            this.txtDisplayName = new DevComponents.DotNetBar.Controls.TextBoxX();
             this.labelX10 = new DevComponents.DotNetBar.LabelX();
-            this.textBoxX4 = new DevComponents.DotNetBar.Controls.TextBoxX();
+            this.txtUserName = new DevComponents.DotNetBar.Controls.TextBoxX();
             this.labelX13 = new DevComponents.DotNetBar.LabelX();
             this.panelEx9 = new DevComponents.DotNetBar.PanelEx();
             this.dtgvAccount = new DevComponents.DotNetBar.Controls.DataGridViewX();
             this.tbFood = new DevComponents.DotNetBar.TabItem(this.components);
             this.tabControlPanel2 = new DevComponents.DotNetBar.TabControlPanel();
             this.panelEx6 = new DevComponents.DotNetBar.PanelEx();
-            this.txtxSearchFoodName = new DevComponents.DotNetBar.Controls.TextBoxX();
+            this.txtSearchFoodName = new DevComponents.DotNetBar.Controls.TextBoxX();
             this.btnxSearchFood = new DevComponents.DotNetBar.ButtonX();
             this.panelEx5 = new DevComponents.DotNetBar.PanelEx();
             this.btnxShowFood = new DevComponents.DotNetBar.ButtonX();
@@ -63,16 +63,16 @@ namespace QuanLyQuanCF
             this.btnxDeleteFood = new DevComponents.DotNetBar.ButtonX();
             this.btnxAddFood = new DevComponents.DotNetBar.ButtonX();
             this.panelEx4 = new DevComponents.DotNetBar.PanelEx();
-            this.numericUpDown1 = new System.Windows.Forms.NumericUpDown();
+            this.nmFoodPrice = new System.Windows.Forms.NumericUpDown();
             this.labelX4 = new DevComponents.DotNetBar.LabelX();
             this.cbxFoodCategory = new DevComponents.DotNetBar.Controls.ComboBoxEx();
             this.labelX3 = new DevComponents.DotNetBar.LabelX();
-            this.txtxFoodName = new DevComponents.DotNetBar.Controls.TextBoxX();
+            this.txtFoodName = new DevComponents.DotNetBar.Controls.TextBoxX();
             this.labelX1 = new DevComponents.DotNetBar.LabelX();
-            this.txtxFoodID = new DevComponents.DotNetBar.Controls.TextBoxX();
+            this.txtFoodID = new DevComponents.DotNetBar.Controls.TextBoxX();
             this.labelX2 = new DevComponents.DotNetBar.LabelX();
             this.panelEx3 = new DevComponents.DotNetBar.PanelEx();
-            this.dtgvxFood = new DevComponents.DotNetBar.Controls.DataGridViewX();
+            this.dtgvFood = new DevComponents.DotNetBar.Controls.DataGridViewX();
             this.tbAccount = new DevComponents.DotNetBar.TabItem(this.components);
             this.tabControlPanel4 = new DevComponents.DotNetBar.TabControlPanel();
             this.panelEx1 = new DevComponents.DotNetBar.PanelEx();
@@ -83,7 +83,7 @@ namespace QuanLyQuanCF
             this.panelEx2 = new DevComponents.DotNetBar.PanelEx();
             this.cbxTable = new DevComponents.DotNetBar.Controls.ComboBoxEx();
             this.labelX5 = new DevComponents.DotNetBar.LabelX();
-            this.txtxTableName = new DevComponents.DotNetBar.Controls.TextBoxX();
+            this.txtTableName = new DevComponents.DotNetBar.Controls.TextBoxX();
             this.labelX11 = new DevComponents.DotNetBar.LabelX();
             this.textBoxX3 = new DevComponents.DotNetBar.Controls.TextBoxX();
             this.labelX12 = new DevComponents.DotNetBar.LabelX();
@@ -98,9 +98,9 @@ namespace QuanLyQuanCF
             this.btnxDeleteCategory = new DevComponents.DotNetBar.ButtonX();
             this.btnxAddCategory = new DevComponents.DotNetBar.ButtonX();
             this.panelEx12 = new DevComponents.DotNetBar.PanelEx();
-            this.txtxCategoryName = new DevComponents.DotNetBar.Controls.TextBoxX();
+            this.txtCategoryName = new DevComponents.DotNetBar.Controls.TextBoxX();
             this.labelX7 = new DevComponents.DotNetBar.LabelX();
-            this.txtxCategoryID = new DevComponents.DotNetBar.Controls.TextBoxX();
+            this.txtCategoryID = new DevComponents.DotNetBar.Controls.TextBoxX();
             this.labelX8 = new DevComponents.DotNetBar.LabelX();
             this.panelEx11 = new DevComponents.DotNetBar.PanelEx();
             this.dtgvCategory = new DevComponents.DotNetBar.Controls.DataGridViewX();
@@ -119,9 +119,9 @@ namespace QuanLyQuanCF
             this.panelEx6.SuspendLayout();
             this.panelEx5.SuspendLayout();
             this.panelEx4.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.nmFoodPrice)).BeginInit();
             this.panelEx3.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dtgvxFood)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dtgvFood)).BeginInit();
             this.tabControlPanel4.SuspendLayout();
             this.panelEx1.SuspendLayout();
             this.panelEx2.SuspendLayout();
@@ -138,9 +138,9 @@ namespace QuanLyQuanCF
             // tabControl1
             // 
             this.tabControl1.CanReorderTabs = true;
-            this.tabControl1.Controls.Add(this.tabControlPanel5);
-            this.tabControl1.Controls.Add(this.tabControlPanel4);
             this.tabControl1.Controls.Add(this.tabControlPanel2);
+            this.tabControl1.Controls.Add(this.tabControlPanel4);
+            this.tabControl1.Controls.Add(this.tabControlPanel5);
             this.tabControl1.Controls.Add(this.tabControlPanel3);
             this.tabControl1.Controls.Add(this.tabControlPanel1);
             this.tabControl1.Location = new System.Drawing.Point(13, 23);
@@ -159,6 +159,7 @@ namespace QuanLyQuanCF
             // tabControlPanel5
             // 
             this.tabControlPanel5.Controls.Add(this.tabControlPanel6);
+            this.tabControlPanel5.DisabledBackColor = System.Drawing.Color.Empty;
             this.tabControlPanel5.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tabControlPanel5.Location = new System.Drawing.Point(0, 26);
             this.tabControlPanel5.Name = "tabControlPanel5";
@@ -179,6 +180,7 @@ namespace QuanLyQuanCF
             this.tabControlPanel6.Controls.Add(this.panelEx8);
             this.tabControlPanel6.Controls.Add(this.panelEx14);
             this.tabControlPanel6.Controls.Add(this.panelEx9);
+            this.tabControlPanel6.DisabledBackColor = System.Drawing.Color.Empty;
             this.tabControlPanel6.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tabControlPanel6.Location = new System.Drawing.Point(1, 1);
             this.tabControlPanel6.Name = "tabControlPanel6";
@@ -201,6 +203,7 @@ namespace QuanLyQuanCF
             this.panelEx8.Controls.Add(this.btnxEditAccount);
             this.panelEx8.Controls.Add(this.btnxDeleteAccount);
             this.panelEx8.Controls.Add(this.btnxAddAccount);
+            this.panelEx8.DisabledBackColor = System.Drawing.Color.Empty;
             this.panelEx8.Location = new System.Drawing.Point(5, 4);
             this.panelEx8.Name = "panelEx8";
             this.panelEx8.Size = new System.Drawing.Size(524, 80);
@@ -258,10 +261,11 @@ namespace QuanLyQuanCF
             this.panelEx14.Controls.Add(this.btnResetPassWord);
             this.panelEx14.Controls.Add(this.cbAccountType);
             this.panelEx14.Controls.Add(this.labelX9);
-            this.panelEx14.Controls.Add(this.txtxDisplayName);
+            this.panelEx14.Controls.Add(this.txtDisplayName);
             this.panelEx14.Controls.Add(this.labelX10);
-            this.panelEx14.Controls.Add(this.textBoxX4);
+            this.panelEx14.Controls.Add(this.txtUserName);
             this.panelEx14.Controls.Add(this.labelX13);
+            this.panelEx14.DisabledBackColor = System.Drawing.Color.Empty;
             this.panelEx14.Location = new System.Drawing.Point(535, 90);
             this.panelEx14.Name = "panelEx14";
             this.panelEx14.Size = new System.Drawing.Size(443, 649);
@@ -288,6 +292,7 @@ namespace QuanLyQuanCF
             this.cbAccountType.DisplayMember = "Text";
             this.cbAccountType.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
             this.cbAccountType.FormattingEnabled = true;
+            this.cbAccountType.ItemHeight = 17;
             this.cbAccountType.Location = new System.Drawing.Point(203, 185);
             this.cbAccountType.Name = "cbAccountType";
             this.cbAccountType.Size = new System.Drawing.Size(228, 23);
@@ -296,6 +301,10 @@ namespace QuanLyQuanCF
             // labelX9
             // 
             this.labelX9.BackColor = System.Drawing.SystemColors.GradientInactiveCaption;
+            // 
+            // 
+            // 
+            this.labelX9.BackgroundStyle.CornerType = DevComponents.DotNetBar.eCornerType.Square;
             this.labelX9.Cursor = System.Windows.Forms.Cursors.Default;
             this.labelX9.Font = new System.Drawing.Font("Arial", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelX9.ForeColor = System.Drawing.SystemColors.ControlText;
@@ -305,20 +314,25 @@ namespace QuanLyQuanCF
             this.labelX9.TabIndex = 14;
             this.labelX9.Text = "Loại tài khoản:";
             // 
-            // txtxDisplayName
+            // txtDisplayName
             // 
             // 
             // 
             // 
-            this.txtxDisplayName.Border.Class = "TextBoxBorder";
-            this.txtxDisplayName.Location = new System.Drawing.Point(202, 113);
-            this.txtxDisplayName.Name = "txtxDisplayName";
-            this.txtxDisplayName.Size = new System.Drawing.Size(228, 30);
-            this.txtxDisplayName.TabIndex = 13;
+            this.txtDisplayName.Border.Class = "TextBoxBorder";
+            this.txtDisplayName.Border.CornerType = DevComponents.DotNetBar.eCornerType.Square;
+            this.txtDisplayName.Location = new System.Drawing.Point(202, 113);
+            this.txtDisplayName.Name = "txtDisplayName";
+            this.txtDisplayName.Size = new System.Drawing.Size(228, 22);
+            this.txtDisplayName.TabIndex = 13;
             // 
             // labelX10
             // 
             this.labelX10.BackColor = System.Drawing.SystemColors.GradientInactiveCaption;
+            // 
+            // 
+            // 
+            this.labelX10.BackgroundStyle.CornerType = DevComponents.DotNetBar.eCornerType.Square;
             this.labelX10.Cursor = System.Windows.Forms.Cursors.Default;
             this.labelX10.Font = new System.Drawing.Font("Arial", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelX10.ForeColor = System.Drawing.SystemColors.ControlText;
@@ -328,21 +342,26 @@ namespace QuanLyQuanCF
             this.labelX10.TabIndex = 12;
             this.labelX10.Text = "Tên hiển thị:";
             // 
-            // textBoxX4
+            // txtUserName
             // 
             // 
             // 
             // 
-            this.textBoxX4.Border.Class = "TextBoxBorder";
-            this.textBoxX4.Location = new System.Drawing.Point(203, 39);
-            this.textBoxX4.Name = "textBoxX4";
-            this.textBoxX4.ReadOnly = true;
-            this.textBoxX4.Size = new System.Drawing.Size(228, 30);
-            this.textBoxX4.TabIndex = 11;
+            this.txtUserName.Border.Class = "TextBoxBorder";
+            this.txtUserName.Border.CornerType = DevComponents.DotNetBar.eCornerType.Square;
+            this.txtUserName.Location = new System.Drawing.Point(203, 39);
+            this.txtUserName.Name = "txtUserName";
+            this.txtUserName.ReadOnly = true;
+            this.txtUserName.Size = new System.Drawing.Size(228, 22);
+            this.txtUserName.TabIndex = 11;
             // 
             // labelX13
             // 
             this.labelX13.BackColor = System.Drawing.SystemColors.GradientInactiveCaption;
+            // 
+            // 
+            // 
+            this.labelX13.BackgroundStyle.CornerType = DevComponents.DotNetBar.eCornerType.Square;
             this.labelX13.Cursor = System.Windows.Forms.Cursors.Default;
             this.labelX13.Font = new System.Drawing.Font("Arial", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelX13.ForeColor = System.Drawing.SystemColors.ControlText;
@@ -356,6 +375,7 @@ namespace QuanLyQuanCF
             // 
             this.panelEx9.CanvasColor = System.Drawing.SystemColors.Control;
             this.panelEx9.Controls.Add(this.dtgvAccount);
+            this.panelEx9.DisabledBackColor = System.Drawing.Color.Empty;
             this.panelEx9.Location = new System.Drawing.Point(5, 90);
             this.panelEx9.Name = "panelEx9";
             this.panelEx9.Size = new System.Drawing.Size(524, 649);
@@ -400,6 +420,7 @@ namespace QuanLyQuanCF
             this.tabControlPanel2.Controls.Add(this.panelEx5);
             this.tabControlPanel2.Controls.Add(this.panelEx4);
             this.tabControlPanel2.Controls.Add(this.panelEx3);
+            this.tabControlPanel2.DisabledBackColor = System.Drawing.Color.Empty;
             this.tabControlPanel2.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tabControlPanel2.Location = new System.Drawing.Point(0, 26);
             this.tabControlPanel2.Name = "tabControlPanel2";
@@ -418,8 +439,9 @@ namespace QuanLyQuanCF
             // panelEx6
             // 
             this.panelEx6.CanvasColor = System.Drawing.SystemColors.Control;
-            this.panelEx6.Controls.Add(this.txtxSearchFoodName);
+            this.panelEx6.Controls.Add(this.txtSearchFoodName);
             this.panelEx6.Controls.Add(this.btnxSearchFood);
+            this.panelEx6.DisabledBackColor = System.Drawing.Color.Empty;
             this.panelEx6.Location = new System.Drawing.Point(535, 4);
             this.panelEx6.Name = "panelEx6";
             this.panelEx6.Size = new System.Drawing.Size(443, 80);
@@ -431,16 +453,17 @@ namespace QuanLyQuanCF
             this.panelEx6.Style.GradientAngle = 90;
             this.panelEx6.TabIndex = 2;
             // 
-            // txtxSearchFoodName
+            // txtSearchFoodName
             // 
             // 
             // 
             // 
-            this.txtxSearchFoodName.Border.Class = "TextBoxBorder";
-            this.txtxSearchFoodName.Location = new System.Drawing.Point(3, 25);
-            this.txtxSearchFoodName.Name = "txtxSearchFoodName";
-            this.txtxSearchFoodName.Size = new System.Drawing.Size(305, 30);
-            this.txtxSearchFoodName.TabIndex = 2;
+            this.txtSearchFoodName.Border.Class = "TextBoxBorder";
+            this.txtSearchFoodName.Border.CornerType = DevComponents.DotNetBar.eCornerType.Square;
+            this.txtSearchFoodName.Location = new System.Drawing.Point(3, 25);
+            this.txtSearchFoodName.Name = "txtSearchFoodName";
+            this.txtSearchFoodName.Size = new System.Drawing.Size(305, 22);
+            this.txtSearchFoodName.TabIndex = 2;
             // 
             // btnxSearchFood
             // 
@@ -459,6 +482,7 @@ namespace QuanLyQuanCF
             this.panelEx5.Controls.Add(this.btnxEditFood);
             this.panelEx5.Controls.Add(this.btnxDeleteFood);
             this.panelEx5.Controls.Add(this.btnxAddFood);
+            this.panelEx5.DisabledBackColor = System.Drawing.Color.Empty;
             this.panelEx5.Location = new System.Drawing.Point(5, 4);
             this.panelEx5.Name = "panelEx5";
             this.panelEx5.Size = new System.Drawing.Size(524, 80);
@@ -513,14 +537,15 @@ namespace QuanLyQuanCF
             // panelEx4
             // 
             this.panelEx4.CanvasColor = System.Drawing.SystemColors.Control;
-            this.panelEx4.Controls.Add(this.numericUpDown1);
+            this.panelEx4.Controls.Add(this.nmFoodPrice);
             this.panelEx4.Controls.Add(this.labelX4);
             this.panelEx4.Controls.Add(this.cbxFoodCategory);
             this.panelEx4.Controls.Add(this.labelX3);
-            this.panelEx4.Controls.Add(this.txtxFoodName);
+            this.panelEx4.Controls.Add(this.txtFoodName);
             this.panelEx4.Controls.Add(this.labelX1);
-            this.panelEx4.Controls.Add(this.txtxFoodID);
+            this.panelEx4.Controls.Add(this.txtFoodID);
             this.panelEx4.Controls.Add(this.labelX2);
+            this.panelEx4.DisabledBackColor = System.Drawing.Color.Empty;
             this.panelEx4.Location = new System.Drawing.Point(535, 90);
             this.panelEx4.Name = "panelEx4";
             this.panelEx4.Size = new System.Drawing.Size(443, 649);
@@ -532,16 +557,20 @@ namespace QuanLyQuanCF
             this.panelEx4.Style.GradientAngle = 90;
             this.panelEx4.TabIndex = 1;
             // 
-            // numericUpDown1
+            // nmFoodPrice
             // 
-            this.numericUpDown1.Location = new System.Drawing.Point(179, 173);
-            this.numericUpDown1.Name = "numericUpDown1";
-            this.numericUpDown1.Size = new System.Drawing.Size(252, 22);
-            this.numericUpDown1.TabIndex = 17;
+            this.nmFoodPrice.Location = new System.Drawing.Point(179, 173);
+            this.nmFoodPrice.Name = "nmFoodPrice";
+            this.nmFoodPrice.Size = new System.Drawing.Size(252, 22);
+            this.nmFoodPrice.TabIndex = 17;
             // 
             // labelX4
             // 
             this.labelX4.BackColor = System.Drawing.SystemColors.GradientInactiveCaption;
+            // 
+            // 
+            // 
+            this.labelX4.BackgroundStyle.CornerType = DevComponents.DotNetBar.eCornerType.Square;
             this.labelX4.Cursor = System.Windows.Forms.Cursors.Default;
             this.labelX4.Font = new System.Drawing.Font("Arial", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelX4.ForeColor = System.Drawing.SystemColors.ControlText;
@@ -556,6 +585,7 @@ namespace QuanLyQuanCF
             this.cbxFoodCategory.DisplayMember = "Text";
             this.cbxFoodCategory.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
             this.cbxFoodCategory.FormattingEnabled = true;
+            this.cbxFoodCategory.ItemHeight = 17;
             this.cbxFoodCategory.Location = new System.Drawing.Point(170, 121);
             this.cbxFoodCategory.Name = "cbxFoodCategory";
             this.cbxFoodCategory.Size = new System.Drawing.Size(261, 23);
@@ -564,6 +594,10 @@ namespace QuanLyQuanCF
             // labelX3
             // 
             this.labelX3.BackColor = System.Drawing.SystemColors.GradientInactiveCaption;
+            // 
+            // 
+            // 
+            this.labelX3.BackgroundStyle.CornerType = DevComponents.DotNetBar.eCornerType.Square;
             this.labelX3.Cursor = System.Windows.Forms.Cursors.Default;
             this.labelX3.Font = new System.Drawing.Font("Arial", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelX3.ForeColor = System.Drawing.SystemColors.ControlText;
@@ -573,20 +607,25 @@ namespace QuanLyQuanCF
             this.labelX3.TabIndex = 14;
             this.labelX3.Text = "Danh mục:";
             // 
-            // txtxFoodName
+            // txtFoodName
             // 
             // 
             // 
             // 
-            this.txtxFoodName.Border.Class = "TextBoxBorder";
-            this.txtxFoodName.Location = new System.Drawing.Point(170, 63);
-            this.txtxFoodName.Name = "txtxFoodName";
-            this.txtxFoodName.Size = new System.Drawing.Size(261, 30);
-            this.txtxFoodName.TabIndex = 13;
+            this.txtFoodName.Border.Class = "TextBoxBorder";
+            this.txtFoodName.Border.CornerType = DevComponents.DotNetBar.eCornerType.Square;
+            this.txtFoodName.Location = new System.Drawing.Point(170, 63);
+            this.txtFoodName.Name = "txtFoodName";
+            this.txtFoodName.Size = new System.Drawing.Size(261, 22);
+            this.txtFoodName.TabIndex = 13;
             // 
             // labelX1
             // 
             this.labelX1.BackColor = System.Drawing.SystemColors.GradientInactiveCaption;
+            // 
+            // 
+            // 
+            this.labelX1.BackgroundStyle.CornerType = DevComponents.DotNetBar.eCornerType.Square;
             this.labelX1.Cursor = System.Windows.Forms.Cursors.Default;
             this.labelX1.Font = new System.Drawing.Font("Arial", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelX1.ForeColor = System.Drawing.SystemColors.ControlText;
@@ -596,21 +635,26 @@ namespace QuanLyQuanCF
             this.labelX1.TabIndex = 12;
             this.labelX1.Text = "Tên món:";
             // 
-            // txtxFoodID
+            // txtFoodID
             // 
             // 
             // 
             // 
-            this.txtxFoodID.Border.Class = "TextBoxBorder";
-            this.txtxFoodID.Location = new System.Drawing.Point(170, 9);
-            this.txtxFoodID.Name = "txtxFoodID";
-            this.txtxFoodID.ReadOnly = true;
-            this.txtxFoodID.Size = new System.Drawing.Size(261, 30);
-            this.txtxFoodID.TabIndex = 11;
+            this.txtFoodID.Border.Class = "TextBoxBorder";
+            this.txtFoodID.Border.CornerType = DevComponents.DotNetBar.eCornerType.Square;
+            this.txtFoodID.Location = new System.Drawing.Point(170, 9);
+            this.txtFoodID.Name = "txtFoodID";
+            this.txtFoodID.ReadOnly = true;
+            this.txtFoodID.Size = new System.Drawing.Size(261, 22);
+            this.txtFoodID.TabIndex = 11;
             // 
             // labelX2
             // 
             this.labelX2.BackColor = System.Drawing.SystemColors.GradientInactiveCaption;
+            // 
+            // 
+            // 
+            this.labelX2.BackgroundStyle.CornerType = DevComponents.DotNetBar.eCornerType.Square;
             this.labelX2.Cursor = System.Windows.Forms.Cursors.Default;
             this.labelX2.Font = new System.Drawing.Font("Arial", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelX2.ForeColor = System.Drawing.SystemColors.ControlText;
@@ -623,7 +667,8 @@ namespace QuanLyQuanCF
             // panelEx3
             // 
             this.panelEx3.CanvasColor = System.Drawing.SystemColors.Control;
-            this.panelEx3.Controls.Add(this.dtgvxFood);
+            this.panelEx3.Controls.Add(this.dtgvFood);
+            this.panelEx3.DisabledBackColor = System.Drawing.Color.Empty;
             this.panelEx3.Location = new System.Drawing.Point(5, 90);
             this.panelEx3.Name = "panelEx3";
             this.panelEx3.Size = new System.Drawing.Size(524, 649);
@@ -635,10 +680,10 @@ namespace QuanLyQuanCF
             this.panelEx3.Style.GradientAngle = 90;
             this.panelEx3.TabIndex = 0;
             // 
-            // dtgvxFood
+            // dtgvFood
             // 
-            this.dtgvxFood.BackgroundColor = System.Drawing.Color.White;
-            this.dtgvxFood.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dtgvFood.BackgroundColor = System.Drawing.Color.White;
+            this.dtgvFood.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             dataGridViewCellStyle6.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
             dataGridViewCellStyle6.BackColor = System.Drawing.SystemColors.Window;
             dataGridViewCellStyle6.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -646,15 +691,15 @@ namespace QuanLyQuanCF
             dataGridViewCellStyle6.SelectionBackColor = System.Drawing.SystemColors.Highlight;
             dataGridViewCellStyle6.SelectionForeColor = System.Drawing.SystemColors.ControlText;
             dataGridViewCellStyle6.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.dtgvxFood.DefaultCellStyle = dataGridViewCellStyle6;
-            this.dtgvxFood.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.dtgvxFood.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(215)))), ((int)(((byte)(229)))));
-            this.dtgvxFood.Location = new System.Drawing.Point(0, 0);
-            this.dtgvxFood.Name = "dtgvxFood";
-            this.dtgvxFood.RowHeadersWidth = 51;
-            this.dtgvxFood.RowTemplate.Height = 24;
-            this.dtgvxFood.Size = new System.Drawing.Size(524, 649);
-            this.dtgvxFood.TabIndex = 0;
+            this.dtgvFood.DefaultCellStyle = dataGridViewCellStyle6;
+            this.dtgvFood.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.dtgvFood.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(215)))), ((int)(((byte)(229)))));
+            this.dtgvFood.Location = new System.Drawing.Point(0, 0);
+            this.dtgvFood.Name = "dtgvFood";
+            this.dtgvFood.RowHeadersWidth = 51;
+            this.dtgvFood.RowTemplate.Height = 24;
+            this.dtgvFood.Size = new System.Drawing.Size(524, 649);
+            this.dtgvFood.TabIndex = 0;
             // 
             // tbAccount
             // 
@@ -667,6 +712,7 @@ namespace QuanLyQuanCF
             this.tabControlPanel4.Controls.Add(this.panelEx1);
             this.tabControlPanel4.Controls.Add(this.panelEx2);
             this.tabControlPanel4.Controls.Add(this.panelEx7);
+            this.tabControlPanel4.DisabledBackColor = System.Drawing.Color.Empty;
             this.tabControlPanel4.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tabControlPanel4.Location = new System.Drawing.Point(0, 26);
             this.tabControlPanel4.Name = "tabControlPanel4";
@@ -689,6 +735,7 @@ namespace QuanLyQuanCF
             this.panelEx1.Controls.Add(this.btnxEditTable);
             this.panelEx1.Controls.Add(this.btnxDeleteTable);
             this.panelEx1.Controls.Add(this.btnxAddTable);
+            this.panelEx1.DisabledBackColor = System.Drawing.Color.Empty;
             this.panelEx1.Location = new System.Drawing.Point(5, 4);
             this.panelEx1.Name = "panelEx1";
             this.panelEx1.Size = new System.Drawing.Size(524, 80);
@@ -745,10 +792,11 @@ namespace QuanLyQuanCF
             this.panelEx2.CanvasColor = System.Drawing.SystemColors.Control;
             this.panelEx2.Controls.Add(this.cbxTable);
             this.panelEx2.Controls.Add(this.labelX5);
-            this.panelEx2.Controls.Add(this.txtxTableName);
+            this.panelEx2.Controls.Add(this.txtTableName);
             this.panelEx2.Controls.Add(this.labelX11);
             this.panelEx2.Controls.Add(this.textBoxX3);
             this.panelEx2.Controls.Add(this.labelX12);
+            this.panelEx2.DisabledBackColor = System.Drawing.Color.Empty;
             this.panelEx2.Location = new System.Drawing.Point(535, 90);
             this.panelEx2.Name = "panelEx2";
             this.panelEx2.Size = new System.Drawing.Size(443, 649);
@@ -765,6 +813,7 @@ namespace QuanLyQuanCF
             this.cbxTable.DisplayMember = "Text";
             this.cbxTable.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
             this.cbxTable.FormattingEnabled = true;
+            this.cbxTable.ItemHeight = 17;
             this.cbxTable.Location = new System.Drawing.Point(216, 127);
             this.cbxTable.Name = "cbxTable";
             this.cbxTable.Size = new System.Drawing.Size(215, 23);
@@ -773,6 +822,10 @@ namespace QuanLyQuanCF
             // labelX5
             // 
             this.labelX5.BackColor = System.Drawing.SystemColors.GradientInactiveCaption;
+            // 
+            // 
+            // 
+            this.labelX5.BackgroundStyle.CornerType = DevComponents.DotNetBar.eCornerType.Square;
             this.labelX5.Cursor = System.Windows.Forms.Cursors.Default;
             this.labelX5.Font = new System.Drawing.Font("Arial", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelX5.ForeColor = System.Drawing.SystemColors.ControlText;
@@ -782,20 +835,25 @@ namespace QuanLyQuanCF
             this.labelX5.TabIndex = 14;
             this.labelX5.Text = "Trạng thái:";
             // 
-            // txtxTableName
+            // txtTableName
             // 
             // 
             // 
             // 
-            this.txtxTableName.Border.Class = "TextBoxBorder";
-            this.txtxTableName.Location = new System.Drawing.Point(216, 63);
-            this.txtxTableName.Name = "txtxTableName";
-            this.txtxTableName.Size = new System.Drawing.Size(215, 30);
-            this.txtxTableName.TabIndex = 13;
+            this.txtTableName.Border.Class = "TextBoxBorder";
+            this.txtTableName.Border.CornerType = DevComponents.DotNetBar.eCornerType.Square;
+            this.txtTableName.Location = new System.Drawing.Point(216, 63);
+            this.txtTableName.Name = "txtTableName";
+            this.txtTableName.Size = new System.Drawing.Size(215, 22);
+            this.txtTableName.TabIndex = 13;
             // 
             // labelX11
             // 
             this.labelX11.BackColor = System.Drawing.SystemColors.GradientInactiveCaption;
+            // 
+            // 
+            // 
+            this.labelX11.BackgroundStyle.CornerType = DevComponents.DotNetBar.eCornerType.Square;
             this.labelX11.Cursor = System.Windows.Forms.Cursors.Default;
             this.labelX11.Font = new System.Drawing.Font("Arial", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelX11.ForeColor = System.Drawing.SystemColors.ControlText;
@@ -811,15 +869,20 @@ namespace QuanLyQuanCF
             // 
             // 
             this.textBoxX3.Border.Class = "TextBoxBorder";
+            this.textBoxX3.Border.CornerType = DevComponents.DotNetBar.eCornerType.Square;
             this.textBoxX3.Location = new System.Drawing.Point(216, 9);
             this.textBoxX3.Name = "textBoxX3";
             this.textBoxX3.ReadOnly = true;
-            this.textBoxX3.Size = new System.Drawing.Size(215, 30);
+            this.textBoxX3.Size = new System.Drawing.Size(215, 22);
             this.textBoxX3.TabIndex = 11;
             // 
             // labelX12
             // 
             this.labelX12.BackColor = System.Drawing.SystemColors.GradientInactiveCaption;
+            // 
+            // 
+            // 
+            this.labelX12.BackgroundStyle.CornerType = DevComponents.DotNetBar.eCornerType.Square;
             this.labelX12.Cursor = System.Windows.Forms.Cursors.Default;
             this.labelX12.Font = new System.Drawing.Font("Arial", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelX12.ForeColor = System.Drawing.SystemColors.ControlText;
@@ -833,6 +896,7 @@ namespace QuanLyQuanCF
             // 
             this.panelEx7.CanvasColor = System.Drawing.SystemColors.Control;
             this.panelEx7.Controls.Add(this.dtgvTable);
+            this.panelEx7.DisabledBackColor = System.Drawing.Color.Empty;
             this.panelEx7.Location = new System.Drawing.Point(5, 90);
             this.panelEx7.Name = "panelEx7";
             this.panelEx7.Size = new System.Drawing.Size(524, 649);
@@ -875,6 +939,7 @@ namespace QuanLyQuanCF
             // tabControlPanel3
             // 
             this.tabControlPanel3.Controls.Add(this.tabControlPanel10);
+            this.tabControlPanel3.DisabledBackColor = System.Drawing.Color.Empty;
             this.tabControlPanel3.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tabControlPanel3.Location = new System.Drawing.Point(0, 26);
             this.tabControlPanel3.Name = "tabControlPanel3";
@@ -895,6 +960,7 @@ namespace QuanLyQuanCF
             this.tabControlPanel10.Controls.Add(this.panelEx13);
             this.tabControlPanel10.Controls.Add(this.panelEx12);
             this.tabControlPanel10.Controls.Add(this.panelEx11);
+            this.tabControlPanel10.DisabledBackColor = System.Drawing.Color.Empty;
             this.tabControlPanel10.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tabControlPanel10.Location = new System.Drawing.Point(1, 1);
             this.tabControlPanel10.Name = "tabControlPanel10";
@@ -916,6 +982,7 @@ namespace QuanLyQuanCF
             this.panelEx13.Controls.Add(this.btnxEditCategory);
             this.panelEx13.Controls.Add(this.btnxDeleteCategory);
             this.panelEx13.Controls.Add(this.btnxAddCategory);
+            this.panelEx13.DisabledBackColor = System.Drawing.Color.Empty;
             this.panelEx13.Location = new System.Drawing.Point(5, 4);
             this.panelEx13.Name = "panelEx13";
             this.panelEx13.Size = new System.Drawing.Size(524, 80);
@@ -970,10 +1037,11 @@ namespace QuanLyQuanCF
             // panelEx12
             // 
             this.panelEx12.CanvasColor = System.Drawing.SystemColors.Control;
-            this.panelEx12.Controls.Add(this.txtxCategoryName);
+            this.panelEx12.Controls.Add(this.txtCategoryName);
             this.panelEx12.Controls.Add(this.labelX7);
-            this.panelEx12.Controls.Add(this.txtxCategoryID);
+            this.panelEx12.Controls.Add(this.txtCategoryID);
             this.panelEx12.Controls.Add(this.labelX8);
+            this.panelEx12.DisabledBackColor = System.Drawing.Color.Empty;
             this.panelEx12.Location = new System.Drawing.Point(535, 90);
             this.panelEx12.Name = "panelEx12";
             this.panelEx12.Size = new System.Drawing.Size(443, 649);
@@ -985,20 +1053,25 @@ namespace QuanLyQuanCF
             this.panelEx12.Style.GradientAngle = 90;
             this.panelEx12.TabIndex = 1;
             // 
-            // txtxCategoryName
+            // txtCategoryName
             // 
             // 
             // 
             // 
-            this.txtxCategoryName.Border.Class = "TextBoxBorder";
-            this.txtxCategoryName.Location = new System.Drawing.Point(216, 63);
-            this.txtxCategoryName.Name = "txtxCategoryName";
-            this.txtxCategoryName.Size = new System.Drawing.Size(215, 30);
-            this.txtxCategoryName.TabIndex = 13;
+            this.txtCategoryName.Border.Class = "TextBoxBorder";
+            this.txtCategoryName.Border.CornerType = DevComponents.DotNetBar.eCornerType.Square;
+            this.txtCategoryName.Location = new System.Drawing.Point(216, 63);
+            this.txtCategoryName.Name = "txtCategoryName";
+            this.txtCategoryName.Size = new System.Drawing.Size(215, 22);
+            this.txtCategoryName.TabIndex = 13;
             // 
             // labelX7
             // 
             this.labelX7.BackColor = System.Drawing.SystemColors.GradientInactiveCaption;
+            // 
+            // 
+            // 
+            this.labelX7.BackgroundStyle.CornerType = DevComponents.DotNetBar.eCornerType.Square;
             this.labelX7.Cursor = System.Windows.Forms.Cursors.Default;
             this.labelX7.Font = new System.Drawing.Font("Arial", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelX7.ForeColor = System.Drawing.SystemColors.ControlText;
@@ -1008,21 +1081,26 @@ namespace QuanLyQuanCF
             this.labelX7.TabIndex = 12;
             this.labelX7.Text = "Tên danh mục:";
             // 
-            // txtxCategoryID
+            // txtCategoryID
             // 
             // 
             // 
             // 
-            this.txtxCategoryID.Border.Class = "TextBoxBorder";
-            this.txtxCategoryID.Location = new System.Drawing.Point(216, 9);
-            this.txtxCategoryID.Name = "txtxCategoryID";
-            this.txtxCategoryID.ReadOnly = true;
-            this.txtxCategoryID.Size = new System.Drawing.Size(215, 30);
-            this.txtxCategoryID.TabIndex = 11;
+            this.txtCategoryID.Border.Class = "TextBoxBorder";
+            this.txtCategoryID.Border.CornerType = DevComponents.DotNetBar.eCornerType.Square;
+            this.txtCategoryID.Location = new System.Drawing.Point(216, 9);
+            this.txtCategoryID.Name = "txtCategoryID";
+            this.txtCategoryID.ReadOnly = true;
+            this.txtCategoryID.Size = new System.Drawing.Size(215, 22);
+            this.txtCategoryID.TabIndex = 11;
             // 
             // labelX8
             // 
             this.labelX8.BackColor = System.Drawing.SystemColors.GradientInactiveCaption;
+            // 
+            // 
+            // 
+            this.labelX8.BackgroundStyle.CornerType = DevComponents.DotNetBar.eCornerType.Square;
             this.labelX8.Cursor = System.Windows.Forms.Cursors.Default;
             this.labelX8.Font = new System.Drawing.Font("Arial", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelX8.ForeColor = System.Drawing.SystemColors.ControlText;
@@ -1036,6 +1114,7 @@ namespace QuanLyQuanCF
             // 
             this.panelEx11.CanvasColor = System.Drawing.SystemColors.Control;
             this.panelEx11.Controls.Add(this.dtgvCategory);
+            this.panelEx11.DisabledBackColor = System.Drawing.Color.Empty;
             this.panelEx11.Location = new System.Drawing.Point(5, 90);
             this.panelEx11.Name = "panelEx11";
             this.panelEx11.Size = new System.Drawing.Size(524, 649);
@@ -1076,6 +1155,7 @@ namespace QuanLyQuanCF
             // 
             // tabControlPanel1
             // 
+            this.tabControlPanel1.DisabledBackColor = System.Drawing.Color.Empty;
             this.tabControlPanel1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tabControlPanel1.Location = new System.Drawing.Point(0, 26);
             this.tabControlPanel1.Name = "tabControlPanel1";
@@ -1118,9 +1198,9 @@ namespace QuanLyQuanCF
             this.panelEx6.ResumeLayout(false);
             this.panelEx5.ResumeLayout(false);
             this.panelEx4.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.nmFoodPrice)).EndInit();
             this.panelEx3.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.dtgvxFood)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dtgvFood)).EndInit();
             this.tabControlPanel4.ResumeLayout(false);
             this.panelEx1.ResumeLayout(false);
             this.panelEx2.ResumeLayout(false);
@@ -1150,7 +1230,7 @@ namespace QuanLyQuanCF
         private DevComponents.DotNetBar.TabControlPanel tabControlPanel1;
         private DevComponents.DotNetBar.TabItem tbBill;
         private DevComponents.DotNetBar.PanelEx panelEx6;
-        private DevComponents.DotNetBar.Controls.TextBoxX txtxSearchFoodName;
+        private DevComponents.DotNetBar.Controls.TextBoxX txtSearchFoodName;
         private DevComponents.DotNetBar.ButtonX btnxSearchFood;
         private DevComponents.DotNetBar.PanelEx panelEx5;
         private DevComponents.DotNetBar.ButtonX btnxShowFood;
@@ -1159,12 +1239,12 @@ namespace QuanLyQuanCF
         private DevComponents.DotNetBar.ButtonX btnxAddFood;
         private DevComponents.DotNetBar.PanelEx panelEx4;
         private DevComponents.DotNetBar.PanelEx panelEx3;
-        private DevComponents.DotNetBar.Controls.DataGridViewX dtgvxFood;
-        private DevComponents.DotNetBar.Controls.TextBoxX txtxFoodName;
+        private DevComponents.DotNetBar.Controls.DataGridViewX dtgvFood;
+        private DevComponents.DotNetBar.Controls.TextBoxX txtFoodName;
         private DevComponents.DotNetBar.LabelX labelX1;
-        private DevComponents.DotNetBar.Controls.TextBoxX txtxFoodID;
+        private DevComponents.DotNetBar.Controls.TextBoxX txtFoodID;
         private DevComponents.DotNetBar.LabelX labelX2;
-        private System.Windows.Forms.NumericUpDown numericUpDown1;
+        private System.Windows.Forms.NumericUpDown nmFoodPrice;
         private DevComponents.DotNetBar.LabelX labelX4;
         private DevComponents.DotNetBar.Controls.ComboBoxEx cbxFoodCategory;
         private DevComponents.DotNetBar.LabelX labelX3;
@@ -1178,9 +1258,9 @@ namespace QuanLyQuanCF
         private DevComponents.DotNetBar.ButtonX btnResetPassWord;
         private DevComponents.DotNetBar.Controls.ComboBoxEx cbAccountType;
         private DevComponents.DotNetBar.LabelX labelX9;
-        private DevComponents.DotNetBar.Controls.TextBoxX txtxDisplayName;
+        private DevComponents.DotNetBar.Controls.TextBoxX txtDisplayName;
         private DevComponents.DotNetBar.LabelX labelX10;
-        private DevComponents.DotNetBar.Controls.TextBoxX textBoxX4;
+        private DevComponents.DotNetBar.Controls.TextBoxX txtUserName;
         private DevComponents.DotNetBar.LabelX labelX13;
         private DevComponents.DotNetBar.PanelEx panelEx9;
         private DevComponents.DotNetBar.Controls.DataGridViewX dtgvAccount;
@@ -1192,7 +1272,7 @@ namespace QuanLyQuanCF
         private DevComponents.DotNetBar.PanelEx panelEx2;
         private DevComponents.DotNetBar.Controls.ComboBoxEx cbxTable;
         private DevComponents.DotNetBar.LabelX labelX5;
-        private DevComponents.DotNetBar.Controls.TextBoxX txtxTableName;
+        private DevComponents.DotNetBar.Controls.TextBoxX txtTableName;
         private DevComponents.DotNetBar.LabelX labelX11;
         private DevComponents.DotNetBar.Controls.TextBoxX textBoxX3;
         private DevComponents.DotNetBar.LabelX labelX12;
@@ -1205,9 +1285,9 @@ namespace QuanLyQuanCF
         private DevComponents.DotNetBar.ButtonX btnxDeleteCategory;
         private DevComponents.DotNetBar.ButtonX btnxAddCategory;
         private DevComponents.DotNetBar.PanelEx panelEx12;
-        private DevComponents.DotNetBar.Controls.TextBoxX txtxCategoryName;
+        private DevComponents.DotNetBar.Controls.TextBoxX txtCategoryName;
         private DevComponents.DotNetBar.LabelX labelX7;
-        private DevComponents.DotNetBar.Controls.TextBoxX txtxCategoryID;
+        private DevComponents.DotNetBar.Controls.TextBoxX txtCategoryID;
         private DevComponents.DotNetBar.LabelX labelX8;
         private DevComponents.DotNetBar.PanelEx panelEx11;
         private DevComponents.DotNetBar.Controls.DataGridViewX dtgvCategory;

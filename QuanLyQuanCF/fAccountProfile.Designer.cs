@@ -29,31 +29,31 @@ namespace QuanLyQuanCF
         /// </summary>
         private void InitializeComponent()
         {
-            this.txtxUserName = new DevComponents.DotNetBar.Controls.TextBoxX();
+            this.txtUserName = new DevComponents.DotNetBar.Controls.TextBoxX();
             this.labelX2 = new DevComponents.DotNetBar.LabelX();
-            this.txtxDisplayName = new DevComponents.DotNetBar.Controls.TextBoxX();
+            this.txtDisplayName = new DevComponents.DotNetBar.Controls.TextBoxX();
             this.labelX1 = new DevComponents.DotNetBar.LabelX();
-            this.txtxPassWord = new DevComponents.DotNetBar.Controls.TextBoxX();
+            this.txtPassWord = new DevComponents.DotNetBar.Controls.TextBoxX();
             this.labelX3 = new DevComponents.DotNetBar.LabelX();
-            this.txtxNewPassWord = new DevComponents.DotNetBar.Controls.TextBoxX();
+            this.txtNewPassWord = new DevComponents.DotNetBar.Controls.TextBoxX();
             this.labelX4 = new DevComponents.DotNetBar.LabelX();
-            this.txtxReEnterPass = new DevComponents.DotNetBar.Controls.TextBoxX();
+            this.txtReEnterPass = new DevComponents.DotNetBar.Controls.TextBoxX();
             this.labelX5 = new DevComponents.DotNetBar.LabelX();
             this.btnxUpdate = new DevComponents.DotNetBar.ButtonX();
             this.btnxExit = new DevComponents.DotNetBar.ButtonX();
             this.SuspendLayout();
             // 
-            // txtxUserName
+            // txtUserName
             // 
             // 
             // 
             // 
-            this.txtxUserName.Border.Class = "TextBoxBorder";
-            this.txtxUserName.Location = new System.Drawing.Point(232, 37);
-            this.txtxUserName.Name = "txtxUserName";
-            this.txtxUserName.ReadOnly = true;
-            this.txtxUserName.Size = new System.Drawing.Size(347, 30);
-            this.txtxUserName.TabIndex = 11;
+            this.txtUserName.Border.Class = "TextBoxBorder";
+            this.txtUserName.Location = new System.Drawing.Point(232, 37);
+            this.txtUserName.Name = "txtUserName";
+            this.txtUserName.ReadOnly = true;
+            this.txtUserName.Size = new System.Drawing.Size(347, 30);
+            this.txtUserName.TabIndex = 11;
             // 
             // labelX2
             // 
@@ -67,16 +67,16 @@ namespace QuanLyQuanCF
             this.labelX2.TabIndex = 10;
             this.labelX2.Text = "Tên đăng nhập:";
             // 
-            // txtxDisplayName
+            // txtDisplayName
             // 
             // 
             // 
             // 
-            this.txtxDisplayName.Border.Class = "TextBoxBorder";
-            this.txtxDisplayName.Location = new System.Drawing.Point(232, 93);
-            this.txtxDisplayName.Name = "txtxDisplayName";
-            this.txtxDisplayName.Size = new System.Drawing.Size(347, 30);
-            this.txtxDisplayName.TabIndex = 13;
+            this.txtDisplayName.Border.Class = "TextBoxBorder";
+            this.txtDisplayName.Location = new System.Drawing.Point(232, 93);
+            this.txtDisplayName.Name = "txtDisplayName";
+            this.txtDisplayName.Size = new System.Drawing.Size(347, 30);
+            this.txtDisplayName.TabIndex = 13;
             // 
             // labelX1
             // 
@@ -90,17 +90,17 @@ namespace QuanLyQuanCF
             this.labelX1.TabIndex = 12;
             this.labelX1.Text = "Tên hiển thị:";
             // 
-            // txtxPassWord
+            // txtPassWord
             // 
             // 
             // 
             // 
-            this.txtxPassWord.Border.Class = "TextBoxBorder";
-            this.txtxPassWord.Location = new System.Drawing.Point(232, 153);
-            this.txtxPassWord.Name = "txtxPassWord";
-            this.txtxPassWord.Size = new System.Drawing.Size(347, 30);
-            this.txtxPassWord.TabIndex = 15;
-            this.txtxPassWord.UseSystemPasswordChar = true;
+            this.txtPassWord.Border.Class = "TextBoxBorder";
+            this.txtPassWord.Location = new System.Drawing.Point(232, 153);
+            this.txtPassWord.Name = "txtPassWord";
+            this.txtPassWord.Size = new System.Drawing.Size(347, 30);
+            this.txtPassWord.TabIndex = 15;
+            this.txtPassWord.UseSystemPasswordChar = true;
             // 
             // labelX3
             // 
@@ -114,17 +114,17 @@ namespace QuanLyQuanCF
             this.labelX3.TabIndex = 14;
             this.labelX3.Text = "Mật khẩu:";
             // 
-            // txtxNewPassWord
+            // txtNewPassWord
             // 
             // 
             // 
             // 
-            this.txtxNewPassWord.Border.Class = "TextBoxBorder";
-            this.txtxNewPassWord.Location = new System.Drawing.Point(232, 209);
-            this.txtxNewPassWord.Name = "txtxNewPassWord";
-            this.txtxNewPassWord.Size = new System.Drawing.Size(347, 30);
-            this.txtxNewPassWord.TabIndex = 17;
-            this.txtxNewPassWord.UseSystemPasswordChar = true;
+            this.txtNewPassWord.Border.Class = "TextBoxBorder";
+            this.txtNewPassWord.Location = new System.Drawing.Point(232, 209);
+            this.txtNewPassWord.Name = "txtNewPassWord";
+            this.txtNewPassWord.Size = new System.Drawing.Size(347, 30);
+            this.txtNewPassWord.TabIndex = 17;
+            this.txtNewPassWord.UseSystemPasswordChar = true;
             // 
             // labelX4
             // 
@@ -138,17 +138,17 @@ namespace QuanLyQuanCF
             this.labelX4.TabIndex = 16;
             this.labelX4.Text = "Mật khẩu mới:";
             // 
-            // txtxReEnterPass
+            // txtReEnterPass
             // 
             // 
             // 
             // 
-            this.txtxReEnterPass.Border.Class = "TextBoxBorder";
-            this.txtxReEnterPass.Location = new System.Drawing.Point(232, 262);
-            this.txtxReEnterPass.Name = "txtxReEnterPass";
-            this.txtxReEnterPass.Size = new System.Drawing.Size(347, 30);
-            this.txtxReEnterPass.TabIndex = 19;
-            this.txtxReEnterPass.UseSystemPasswordChar = true;
+            this.txtReEnterPass.Border.Class = "TextBoxBorder";
+            this.txtReEnterPass.Location = new System.Drawing.Point(232, 262);
+            this.txtReEnterPass.Name = "txtReEnterPass";
+            this.txtReEnterPass.Size = new System.Drawing.Size(347, 30);
+            this.txtReEnterPass.TabIndex = 19;
+            this.txtReEnterPass.UseSystemPasswordChar = true;
             // 
             // labelX5
             // 
@@ -182,7 +182,6 @@ namespace QuanLyQuanCF
             this.btnxExit.Size = new System.Drawing.Size(135, 43);
             this.btnxExit.TabIndex = 21;
             this.btnxExit.Text = "Thoát";
-            this.btnxExit.Click += new System.EventHandler(this.btnxExit_Click);
             // 
             // fAccountProfile
             // 
@@ -193,15 +192,15 @@ namespace QuanLyQuanCF
             this.ClientSize = new System.Drawing.Size(587, 368);
             this.Controls.Add(this.btnxExit);
             this.Controls.Add(this.btnxUpdate);
-            this.Controls.Add(this.txtxReEnterPass);
+            this.Controls.Add(this.txtReEnterPass);
             this.Controls.Add(this.labelX5);
-            this.Controls.Add(this.txtxNewPassWord);
+            this.Controls.Add(this.txtNewPassWord);
             this.Controls.Add(this.labelX4);
-            this.Controls.Add(this.txtxPassWord);
+            this.Controls.Add(this.txtPassWord);
             this.Controls.Add(this.labelX3);
-            this.Controls.Add(this.txtxDisplayName);
+            this.Controls.Add(this.txtDisplayName);
             this.Controls.Add(this.labelX1);
-            this.Controls.Add(this.txtxUserName);
+            this.Controls.Add(this.txtUserName);
             this.Controls.Add(this.labelX2);
             this.Name = "fAccountProfile";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
@@ -212,15 +211,15 @@ namespace QuanLyQuanCF
 
         #endregion
 
-        private DevComponents.DotNetBar.Controls.TextBoxX txtxUserName;
+        private DevComponents.DotNetBar.Controls.TextBoxX txtUserName;
         private DevComponents.DotNetBar.LabelX labelX2;
-        private DevComponents.DotNetBar.Controls.TextBoxX txtxDisplayName;
+        private DevComponents.DotNetBar.Controls.TextBoxX txtDisplayName;
         private DevComponents.DotNetBar.LabelX labelX1;
-        private DevComponents.DotNetBar.Controls.TextBoxX txtxPassWord;
+        private DevComponents.DotNetBar.Controls.TextBoxX txtPassWord;
         private DevComponents.DotNetBar.LabelX labelX3;
-        private DevComponents.DotNetBar.Controls.TextBoxX txtxNewPassWord;
+        private DevComponents.DotNetBar.Controls.TextBoxX txtNewPassWord;
         private DevComponents.DotNetBar.LabelX labelX4;
-        private DevComponents.DotNetBar.Controls.TextBoxX txtxReEnterPass;
+        private DevComponents.DotNetBar.Controls.TextBoxX txtReEnterPass;
         private DevComponents.DotNetBar.LabelX labelX5;
         private DevComponents.DotNetBar.ButtonX btnxUpdate;
         private DevComponents.DotNetBar.ButtonX btnxExit;

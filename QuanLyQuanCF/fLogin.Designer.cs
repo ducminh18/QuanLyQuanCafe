@@ -32,9 +32,9 @@ namespace QuanLyQuanCF
             this.labelX1 = new DevComponents.DotNetBar.LabelX();
             this.groupPanel1 = new DevComponents.DotNetBar.Controls.GroupPanel();
             this.btnxThoat = new DevComponents.DotNetBar.ButtonX();
-            this.txtxPassWord = new DevComponents.DotNetBar.Controls.TextBoxX();
+            this.txtPassWord = new DevComponents.DotNetBar.Controls.TextBoxX();
             this.labelX3 = new DevComponents.DotNetBar.LabelX();
-            this.txtxUserName = new DevComponents.DotNetBar.Controls.TextBoxX();
+            this.txtUserName = new DevComponents.DotNetBar.Controls.TextBoxX();
             this.labelX2 = new DevComponents.DotNetBar.LabelX();
             this.btnxLogin = new DevComponents.DotNetBar.ButtonX();
             this.groupPanel2 = new DevComponents.DotNetBar.Controls.GroupPanel();
@@ -60,9 +60,9 @@ namespace QuanLyQuanCF
             this.groupPanel1.CanvasColor = System.Drawing.SystemColors.Control;
             this.groupPanel1.ColorSchemeStyle = DevComponents.DotNetBar.eDotNetBarStyle.Office2007;
             this.groupPanel1.Controls.Add(this.btnxThoat);
-            this.groupPanel1.Controls.Add(this.txtxPassWord);
+            this.groupPanel1.Controls.Add(this.txtPassWord);
             this.groupPanel1.Controls.Add(this.labelX3);
-            this.groupPanel1.Controls.Add(this.txtxUserName);
+            this.groupPanel1.Controls.Add(this.txtUserName);
             this.groupPanel1.Controls.Add(this.labelX2);
             this.groupPanel1.Controls.Add(this.btnxLogin);
             this.groupPanel1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -109,17 +109,17 @@ namespace QuanLyQuanCF
             this.btnxThoat.Text = "THOÁT";
             this.btnxThoat.Click += new System.EventHandler(this.btnxThoat_Click);
             // 
-            // txtxPassWord
+            // txtPassWord
             // 
             // 
             // 
             // 
-            this.txtxPassWord.Border.Class = "TextBoxBorder";
-            this.txtxPassWord.Location = new System.Drawing.Point(240, 88);
-            this.txtxPassWord.Name = "txtxPassWord";
-            this.txtxPassWord.Size = new System.Drawing.Size(347, 30);
-            this.txtxPassWord.TabIndex = 11;
-            this.txtxPassWord.UseSystemPasswordChar = true;
+            this.txtPassWord.Border.Class = "TextBoxBorder";
+            this.txtPassWord.Location = new System.Drawing.Point(240, 88);
+            this.txtPassWord.Name = "txtPassWord";
+            this.txtPassWord.Size = new System.Drawing.Size(347, 30);
+            this.txtPassWord.TabIndex = 11;
+            this.txtPassWord.UseSystemPasswordChar = true;
             // 
             // labelX3
             // 
@@ -133,16 +133,16 @@ namespace QuanLyQuanCF
             this.labelX3.TabIndex = 10;
             this.labelX3.Text = "Mật khẩu:";
             // 
-            // txtxUserName
+            // txtUserName
             // 
             // 
             // 
             // 
-            this.txtxUserName.Border.Class = "TextBoxBorder";
-            this.txtxUserName.Location = new System.Drawing.Point(240, 28);
-            this.txtxUserName.Name = "txtxUserName";
-            this.txtxUserName.Size = new System.Drawing.Size(347, 30);
-            this.txtxUserName.TabIndex = 9;
+            this.txtUserName.Border.Class = "TextBoxBorder";
+            this.txtUserName.Location = new System.Drawing.Point(240, 28);
+            this.txtUserName.Name = "txtUserName";
+            this.txtUserName.Size = new System.Drawing.Size(347, 30);
+            this.txtUserName.TabIndex = 9;
             // 
             // labelX2
             // 
@@ -240,9 +240,9 @@ namespace QuanLyQuanCF
         private DevComponents.DotNetBar.Controls.GroupPanel groupPanel2;
         private System.Windows.Forms.PictureBox pictureBox1;
         private DevComponents.DotNetBar.ButtonX btnxLogin;
-        private DevComponents.DotNetBar.Controls.TextBoxX txtxPassWord;
+        private DevComponents.DotNetBar.Controls.TextBoxX txtPassWord;
         private DevComponents.DotNetBar.LabelX labelX3;
-        private DevComponents.DotNetBar.Controls.TextBoxX txtxUserName;
+        private DevComponents.DotNetBar.Controls.TextBoxX txtUserName;
         private DevComponents.DotNetBar.LabelX labelX2;
         private DevComponents.DotNetBar.ButtonX btnxThoat;
     }

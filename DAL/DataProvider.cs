@@ -1,16 +1,16 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Data;
+using System.Data.SqlClient;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using System.Data;
-using System.Data.SqlClient;
 
-namespace DAL
+namespace QuanLyQuanCafe.DAO
 {
     public class DataProvider
     {
-        private static DataProvider instance;
+        private static DataProvider instance; // Ctrl + R + E
 
         public static DataProvider Instance
         {
@@ -18,10 +18,10 @@ namespace DAL
             private set { DataProvider.instance = value; }
         }
 
-        private DataProvider() { }
+        private DataProvider(){}
 
-        private string connectionSTR = "Data Source=Admin;Initial Catalog=QuanLyQuanCafe;Integrated Security=True";
-
+        private string connectionSTR = "Data Source=.\\MSSQLSERVERDONG;Initial Catalog=QuanLyQuanCafe;Integrated Security=True";
+        
         public DataTable ExecuteQuery(string query, object[] parameter = null)
         {
             DataTable data = new DataTable();
@@ -31,7 +31,7 @@ namespace DAL
                 connection.Open();
 
                 SqlCommand command = new SqlCommand(query, connection);
-
+                
                 if (parameter != null)
                 {
                     string[] listPara = query.Split(' ');
@@ -45,7 +45,7 @@ namespace DAL
                         }
                     }
                 }
-
+                
                 SqlDataAdapter adapter = new SqlDataAdapter(command);
 
                 adapter.Fill(data);
@@ -121,4 +121,3 @@ namespace DAL
         }
     }
 }
-
