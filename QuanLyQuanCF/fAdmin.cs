@@ -310,10 +310,10 @@ namespace QuanLyQuanCF
 
         #endregion              
 
-        private void btnFristBillPage_Click(object sender, EventArgs e)
-        {
-            txtPageBill.Text = "1";
-        }
+        //private void btnFristBillPage_Click(object sender, EventArgs e)
+        //{
+        //    txtPageBill.Text = "1";
+        //}
 
         //private void btnLastBillPage_Click(object sender, EventArgs e)
         //{
